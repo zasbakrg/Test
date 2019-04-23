@@ -8,12 +8,12 @@
  *   получится "Выбран «Генератор защитного поля», цена за штуку 2000 кредитов"
  */
 
-// 'use strict'
-// const name = "ShieldGenerator";
-// let namePrice = 1000;
-// namePrice = 2000;
-// const message1 = `Выбран ${name}, цена за штуку ${namePrice} кредитов`;
-// console.log(message1);
+'use strict'
+const name = "ShieldGenerator";
+let namePrice = 1000;
+namePrice = 2000;
+const message1 = `Выбран ${name}, цена за штуку ${namePrice} кредитов`;
+console.log(message1);
 
 /*
   Есть три переменные содержащие составляющие 
@@ -27,13 +27,13 @@
   PS: используя шаблонные строки.
 */
 
-// 'use strict'
-// const day = 17;
-// const month = 10;
-// const year = 2048;
-// const data = `${day}\\${month}\\${year}`;
-// const messageData = `Доброе утро, сегодня ${data}, за бортом отличная погода!`;
-// console.log(messageData);
+'use strict'
+const day = 17;
+const month = 10;
+const year = 2048;
+const data = `${day}\\${month}\\${year}`;
+const messageData = `Доброе утро, сегодня ${data}, за бортом отличная погода!`;
+console.log(messageData);
 
 /*
   Есть три переменные name, date и roomType, содержащие имя гостя, 
@@ -42,12 +42,12 @@
   Создай переменную message и используя шаблонные строки запиши в нее сообщение формата:
   "имя гостя" прибывает на отдых "дата прибытия" в "тип комнаты".
 */
-// 'use strict'
-// const username = 'Mango';
-// const userdate = '14/08/2137';
-// const roomType = 'люкс';
-// const TogetherMessage = `${username} прибывает на отдых ${userdate} в ${roomType}`
-// console.log(TogetherMessage); // Mango прибывает на отдых 14/08/2137 в люкс
+'use strict'
+const username = 'Mango';
+const userdate = '14/08/2137';
+const roomType = 'люкс';
+const TogetherMessage = `${username} прибывает на отдых ${userdate} в ${roomType}`
+console.log(TogetherMessage); // Mango прибывает на отдых 14/08/2137 в люкс
 
 /*
   Напиши скрипт который: 
@@ -63,18 +63,18 @@
 */
 
 
-// 'use strict'
-// const correctPassword = 'jqueryismyjam';
-// let messagePassword = prompt("Введите пароль доступа");
+'use strict'
+const correctPassword = 'jqueryismyjam';
+let messagePassword = prompt("Введите пароль доступа");
 
-// if (!messagePassword) {
-//     alert('Ожидаю ввода пароля');
-// } else if (messagePassword === correctPassword) {
-//     alert("Доступ в секретный бункер разрешен!");
+if (!messagePassword) {
+    alert('Ожидаю ввода пароля');
+} else if (messagePassword === correctPassword) {
+    alert("Доступ в секретный бункер разрешен!");
 
-// } else(messagePassword !== correctPassword); {
-//     alert("Активирована система защиты!");
-// }
+} else(messagePassword !== correctPassword); {
+    alert("Активирована система защиты!");
+}
 
 
 
@@ -94,6 +94,6 @@
   Проверь работоспособность кода с разными значениями переменной ordered.
 */
 
-// 'use strict'
-// const total = 100;
-// const ordered = 50;
+'use strict'
+const total = 100;
+const ordered = 50;

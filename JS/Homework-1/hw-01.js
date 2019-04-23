@@ -10,17 +10,17 @@
 записать в message строку 'Добро пожаловать!'
 После всех проверок вывести в alert значение переменной message.*/
 
-// 'use strict'
-// const ADMIN_PASSWORD = 'm4ng0h4ckz';
-// let message = prompt("Введите пароль");
-// if (!message) {
-//     console.log(message = "Отменено пользователем!")
-// } else if (ADMIN_PASSWORD !== message) {
-//     console.log(message = "Доступ запрещен, неверный пароль!")
-// } else {
-//     console.log(message = "Добро пожаловать!")
-// }
-// alert(message);
+ 'use strict'
+ const ADMIN_PASSWORD = 'm4ng0h4ckz';
+let message = prompt("Введите пароль");
+if (!message) {
+    console.log(message = "Отменено пользователем!")
+} else if (ADMIN_PASSWORD !== message) {
+    console.log(message = "Доступ запрещен, неверный пароль!")
+} else {
+    console.log(message = "Добро пожаловать!")
+}
+alert(message);
 
 /*На счету пользователя есть 23580 кредитов, хранится в переменной credits(создай и присвой).
 
@@ -38,16 +38,16 @@
 'Вы купили [число] дроидов, на счету осталось [число] кредитов.'
 Проверь работоспособность скрипта со значениями переменной quantity: 3, 5, 8 и 12.*/
 
-// 'use strict'
-// const credits = 23580;
-// let pricePerDroid = 3000;
-// let quantity = 3;
-// let totalPrice = pricePerDroid * quantity;
-// if (totalPrice > credits) {
-//     console.log('Недостаточно средств на счету!')
-// } else if (totalPrice <= credits) {
-//     console.log(`Вы купили ${quantity} дроидов, на счету осталось ${credits-totalPrice} кредитов.`)
-// }
+'use strict'
+const credits = 23580;
+let pricePerDroid = 3000;
+let quantity = 3;
+let totalPrice = pricePerDroid * quantity;
+if (totalPrice > credits) {
+    console.log('Недостаточно средств на счету!')
+} else if (totalPrice <= credits) {
+    console.log(`Вы купили ${quantity} дроидов, на счету осталось ${credits-totalPrice} кредитов.`)
+}
 
 
 /*Пользователь может оформить доставку товара к себе в страну, указав ее в переменной country, но доставка есть не везде.
@@ -64,26 +64,26 @@ PS: используй switch
 const country = 'Индия';*/
 
 
-// 'use strict'
-// let userChoice = prompt(`В какую страну доставка?`);
-// let message_1;
-// switch (userChoice) {
-//     case 'Индия':
-//         message_1 = `Доставка в Индию будет стоить 80 кредитов`
-//         break;
-//     case 'Китай':
-//         message_1 = `Доставка в Китай будет стоить 100 кредитов`
-//         break;
-//     case 'Южная Америка':
-//         message_1 = `Доставка в Южную Америку будет стоить 250 кредитов`
-//         break;
-//     case 'Австралия':
-//         message_1 = `Доставка в Австралию будет стоить 170 кредитов`
-//         break;
-//     case 'Ямайка':
-//         message_1 = `Доставка в Ямайку будет стоить 120 кредитов`
-//         break;
-//     default:
-//         message_1 = 'В вашей стране доставка не доступна'
-// }
-// console.log(message_1);
+'use strict'
+let userChoice = prompt(`В какую страну доставка?`);
+let message_1;
+switch (userChoice) {
+    case 'ИнДия':
+        message_1 = `Доставка в Индию будет стоить 80 кредитов`
+        break;
+    case 'КитАй':
+        message_1 = `Доставка в Китай будет стоить 100 кредитов`
+        break;
+    case 'ЮжнАя АмерИка':
+        message_1 = `Доставка в Южную Америку будет стоить 250 кредитов`
+        break;
+    case 'АвсТрАлия':
+        message_1 = `Доставка в Австралию будет стоить 170 кредитов`
+        break;
+    case 'ЯмайКа':
+        message_1 = `Доставка в Ямайку будет стоить 120 кредитов`
+        break;
+    default:
+        message_1 = 'В вашей стране доставка не доступна'
+}
+console.log(message_1);
