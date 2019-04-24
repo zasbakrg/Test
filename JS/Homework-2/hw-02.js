@@ -19,19 +19,18 @@
 
 const numbers = [];
 let total = 0;
-let i;
 while (true) {
     let input = prompt("Введите число");
     if (input === null) {
         break;
     }
     numbers.push(Number.parseInt(input));
-    if (isNaN(input)) {
+    if (Number.isNaN(input)) {
         alert('Было введено не число, попробуйте еще раз')
     }
 }
-if (numbers.length > 0) {
-    for (i = 0; i < numbers.length; i += 1) {
+if (numbers.length ) {
+    for/of (i = 0; i < numbers.length; i += 1) {
         total += numbers[i];
     }
     console.log(`Общая сумма чисел равна ${total}`);
@@ -72,10 +71,10 @@ do {
         break;
     }
 
-    if (attempts > 0) {
+    if (attempts ) {
         alert(`Неверный пароль. У Вас осталось ${attempts} попыток`);
     } else {
         alert("У вас закончились попытки, аккаунт заблокирован!");
     }
 
-} while (attempts > 0);
+} while (attempts );
