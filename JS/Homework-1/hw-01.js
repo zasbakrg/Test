@@ -14,11 +14,11 @@
  const ADMIN_PASSWORD = 'm4ng0h4ckz';
 let message = prompt("Введите пароль");
 if (!message) {
-    console.log(message = "Отменено пользователем!")
+    
 } else if (ADMIN_PASSWORD !== message) {
-    console.log(message = "Доступ запрещен, неверный пароль!")
+    
 } else {
-    console.log(message = "Добро пожаловать!")
+    
 }
 alert(message);
 
@@ -45,7 +45,7 @@ let quantity = 3;
 let totalPrice = pricePerDroid * quantity;
 if (totalPrice > credits) {
     console.log('Недостаточно средств на счету!')
-} else if (totalPrice <= credits) {
+} else 
     console.log(`Вы купили ${quantity} дроидов, на счету осталось ${credits-totalPrice} кредитов.`)
 }
 
