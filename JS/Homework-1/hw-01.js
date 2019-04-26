@@ -10,15 +10,16 @@
 записать в message строку 'Добро пожаловать!'
 После всех проверок вывести в alert значение переменной message.*/
 
- 'use strict'
- const ADMIN_PASSWORD = 'm4ng0h4ckz';
-let message = prompt("Введите пароль");
-if (!message) {
-    
-} else if (ADMIN_PASSWORD !== message) {
-    
+const ADMIN_PASSWORD = 'm4ng0h4ckz';
+let message;
+const inputPassword = prompt('Введите пароль.');
+
+if (inputPassword === null) {
+    message = 'Отменено пользователем!';
+} else if (inputPassword !== ADMIN_PASSWORD) {
+    message = 'Доступ запрещен, неверный пароль!';
 } else {
-    
+    message = 'Добро пожаловать!';
 }
 alert(message);
 
@@ -64,26 +65,31 @@ PS: используй switch
 const country = 'Индия';*/
 
 
-'use strict'
-let userChoice = prompt(`В какую страну доставка?`);
-let message_1;
-switch (userChoice) {
-    case 'ИнДия':
-        message_1 = `Доставка в Индию будет стоить 80 кредитов`
-        break;
-    case 'КитАй':
-        message_1 = `Доставка в Китай будет стоить 100 кредитов`
-        break;
-    case 'ЮжнАя АмерИка':
-        message_1 = `Доставка в Южную Америку будет стоить 250 кредитов`
-        break;
-    case 'АвсТрАлия':
-        message_1 = `Доставка в Австралию будет стоить 170 кредитов`
-        break;
-    case 'ЯмайКа':
-        message_1 = `Доставка в Ямайку будет стоить 120 кредитов`
-        break;
-    default:
-        message_1 = 'В вашей стране доставка не доступна'
+let userCountry = prompt("Введите страну доставки");
+let howMuch;
+if (userCountry) {
+  userCountry = userCountry.toLowerCase().trim();
 }
-console.log(message_1);
+
+switch (userCountry) {
+  case "китай":
+    howMuch = 100;
+    break;
+  case "южная америка":
+    howMuch = 250;
+    break;
+  case "австралия":
+    howMuch = 170;
+    break;
+  case "индия":
+    howMuch = 80;
+    break;
+  case "ямайка":
+    howMuch = 120;
+    break;
+  default:
+    console.log("В вашей стране доставка не доступна.");
+}
+
+if (howMuch) {
+  console.log(`Доставка в ${userCountry} будет стоить ${howMuch} кредитов.`);
