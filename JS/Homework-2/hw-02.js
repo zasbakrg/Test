@@ -17,25 +17,25 @@
 
 'use strict'
 
+let input;
 const numbers = [];
 let total = 0;
-while (true) {
-    let input = prompt("Введите число");
-    if (input === null) {
-        break;
-    }
-    numbers.push(Number.parseInt(input));
-    if (Number.isNaN(input)) {
-        alert('Было введено не число, попробуйте еще раз')
-    }
-}
-if (numbers.length ) {
-    for/of (i = 0; i < numbers.length; i += 1) {
-        total += numbers[i];
-    }
-    console.log(`Общая сумма чисел равна ${total}`);
-}
-
+do {
+  input = prompt("Введите число");
+  if (input === null) {
+    continue;
+  } else if (!Number.isNaN(+input) && input.trim() !== "") {
+    numbers.push(+input);
+  } else {
+    alert("Было введено не число, попробуйте еще раз");
+  }
+} while (input !== null);
+if (numbers.length) {
+  for (const number of numbers) {
+    total += number;
+  }
+  alert(`Общая сумма чисел равна ${total}`);
+    
 //Задание 2
 //Напиши скрипт имитирующий авторизацию пользователя.
 //Есть массив паролей зарегистрированных пользователей passwords.
