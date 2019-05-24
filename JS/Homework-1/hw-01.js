@@ -90,6 +90,3 @@ switch (userCountry) {
   default:
     console.log("В вашей стране доставка не доступна.");
 }
-
-if (howMuch) {
-  console.log(`Доставка в ${userCountry} будет стоить ${howMuch} кредитов.`);
